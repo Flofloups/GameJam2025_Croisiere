@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.koryme.unity-scene-reference-utils": "https://github.com/KorYme/MasterProjectUnity.git?path=/Packages/SceneReferenceUtils",
+    "com.koryme.unity-toolbar-extender": "https://github.com/KorYme/MasterProjectUnity.git?path=/Packages/ToolbarExtender",
     "com.unity.collab-proxy": "2.9.2",
     "com.unity.feature.2d": "2.0.0",
     "com.unity.ide.rider": "3.0.24",
