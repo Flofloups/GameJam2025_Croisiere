@@ -52,7 +52,7 @@ public class GameLoopManager : MonoBehaviour
         if (TransitionManager.Instance.IsTransitioning || _currentSceneIndex == sceneIndex) return;
         if (_sceneReferences.Count >= sceneIndex || sceneIndex < 0) return;
         
-        LoadScene(_sceneReferences[sceneIndex], _currentSceneIndex);
+        LoadScene(_sceneReferences[sceneIndex]);
         _currentSceneIndex = sceneIndex;
     }
 
@@ -60,25 +60,19 @@ public class GameLoopManager : MonoBehaviour
     {
         if (TransitionManager.Instance.IsTransitioning || _currentSceneIndex == -1) return;
         
-        LoadScene(_uiScene, _currentSceneIndex);
+        LoadScene(_uiScene);
         _currentSceneIndex = -1;
     }
 
-    private void LoadScene(SceneReference sceneReference, int previousSceneIndex)
+    private void LoadScene(SceneReference sceneReference)
     {
         TransitionManager.Instance.FadeInTransition(OnTransitionComplete);
 
         void OnTransitionComplete()
         {
-            AsyncOperation asyncOpLoad = sceneReference.LoadSceneAsync(LoadSceneMode.Additive);
-            AsyncOperation asyncOpUnload = previousSceneIndex switch
-            {
-                -2 => null,
-                -1 => _uiScene.UnloadSceneAsync(),
-                _ => _sceneReferences[previousSceneIndex].UnloadSceneAsync(),
-            };
+            AsyncOperation asyncOpLoad = sceneReference.LoadSceneAsync(LoadSceneMode.Single);
             
-            if (asyncOpLoad == null && asyncOpUnload == null)
+            if (asyncOpLoad == null)
             {
                 OnSceneLoaded(null);
                 return;
@@ -88,14 +82,9 @@ public class GameLoopManager : MonoBehaviour
                 asyncOpLoad.completed += OnSceneLoaded;
                 asyncOpLoad.allowSceneActivation = true;
             }
-            if (asyncOpUnload != null)
-            {
-                asyncOpUnload.completed += OnSceneLoaded;
-                asyncOpUnload.allowSceneActivation = true;
-            }
             void OnSceneLoaded(AsyncOperation _)
             {
-                if ((asyncOpLoad?.isDone ?? true) && (asyncOpUnload?.isDone ?? true))
+                if (asyncOpLoad?.isDone ?? true)
                 {
                     TransitionManager.Instance.FadeOutTransition();
                 }

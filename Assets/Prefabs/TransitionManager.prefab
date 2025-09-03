@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 8652419843694813394}
   - component: {fileID: 4524427451902429510}
   - component: {fileID: 3336192642042008163}
-  - component: {fileID: 4783119036015074776}
+  - component: {fileID: 4094444948645859499}
+  - component: {fileID: 4497257816551593048}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -103,7 +104,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!95 &4783119036015074776
+--- !u!95 &4094444948645859499
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -124,6 +125,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!225 &4497257816551593048
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834175874756388977}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2223808563991526185
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +257,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dfdcc7d62827884887c8d4ad9abefc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitionClip: {fileID: 7400000, guid: 46a4d7095be40fc4dac0c1966e485cc4, type: 2}
+  _transitionClip: {fileID: 7400000, guid: 0a4d4edb73ff1ef49b24dcf9539732ee, type: 2}
   _canvasTransform: {fileID: 7994403922626442930}
   _transitionDuration: 1
