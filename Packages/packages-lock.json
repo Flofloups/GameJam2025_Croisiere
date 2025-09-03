@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.koryme.unity-scene-reference-utils": {
+      "version": "https://github.com/KorYme/MasterProjectUnity.git?path=/Packages/SceneReferenceUtils",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "dccc5067fc9cb71c19aadfeb147ef98d2dd71ee0"
+    },
+    "com.koryme.unity-toolbar-extender": {
+      "version": "https://github.com/KorYme/MasterProjectUnity.git?path=/Packages/ToolbarExtender",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "dccc5067fc9cb71c19aadfeb147ef98d2dd71ee0"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.3",
       "depth": 1,
