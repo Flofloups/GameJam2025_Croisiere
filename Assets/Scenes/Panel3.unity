@@ -270,6 +270,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _barrelNumber: 3
   _checkAnswers: {fileID: 2131551377}
+  _onObjectReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1597496206}
+        m_TargetAssemblyTypeName: IngredientPlacement, Assembly-CSharp
+        m_MethodName: BringNextFruit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &157435843
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +372,7 @@ GameObject:
   - component: {fileID: 490353216}
   - component: {fileID: 490353215}
   - component: {fileID: 490353217}
+  - component: {fileID: 490353218}
   m_Layer: 5
   m_Name: Piment
   m_TagString: Untagged
@@ -434,6 +450,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientNumber: 0
+  _onDragBeginEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 490353218}
+        m_TargetAssemblyTypeName: FruitMovement, Assembly-CSharp
+        m_MethodName: KillMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &490353218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490353213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd8ff18648e46142abb1ce61fa5b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &516655066
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +489,7 @@ GameObject:
   - component: {fileID: 516655069}
   - component: {fileID: 516655068}
   - component: {fileID: 516655070}
+  - component: {fileID: 516655071}
   m_Layer: 5
   m_Name: Viande
   m_TagString: Untagged
@@ -523,6 +567,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientNumber: 0
+  _onDragBeginEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 516655071}
+        m_TargetAssemblyTypeName: FruitMovement, Assembly-CSharp
+        m_MethodName: KillMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &516655071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516655066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd8ff18648e46142abb1ce61fa5b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &611431624
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +649,7 @@ GameObject:
   - component: {fileID: 625124086}
   - component: {fileID: 625124085}
   - component: {fileID: 625124087}
+  - component: {fileID: 625124088}
   m_Layer: 5
   m_Name: Cerises
   m_TagString: Untagged
@@ -655,6 +727,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientNumber: 0
+  _onDragBeginEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 625124088}
+        m_TargetAssemblyTypeName: FruitMovement, Assembly-CSharp
+        m_MethodName: KillMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &625124088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625124083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd8ff18648e46142abb1ce61fa5b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &747196051
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,6 +949,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _barrelNumber: 2
   _checkAnswers: {fileID: 2131551377}
+  _onObjectReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1597496206}
+        m_TargetAssemblyTypeName: IngredientPlacement, Assembly-CSharp
+        m_MethodName: BringNextFruit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &761219167
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +976,7 @@ GameObject:
   - component: {fileID: 761219170}
   - component: {fileID: 761219169}
   - component: {fileID: 761219171}
+  - component: {fileID: 761219172}
   m_Layer: 5
   m_Name: Tullipe
   m_TagString: Untagged
@@ -939,6 +1054,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientNumber: 0
+  _onDragBeginEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 761219172}
+        m_TargetAssemblyTypeName: FruitMovement, Assembly-CSharp
+        m_MethodName: KillMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &761219172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761219167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd8ff18648e46142abb1ce61fa5b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &851441297
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +1093,7 @@ GameObject:
   - component: {fileID: 851441300}
   - component: {fileID: 851441299}
   - component: {fileID: 851441301}
+  - component: {fileID: 851441302}
   m_Layer: 5
   m_Name: Feuille
   m_TagString: Untagged
@@ -1028,6 +1171,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientNumber: 0
+  _onDragBeginEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851441302}
+        m_TargetAssemblyTypeName: FruitMovement, Assembly-CSharp
+        m_MethodName: KillMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851441302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851441297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd8ff18648e46142abb1ce61fa5b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &933846769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1288,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _barrelNumber: 1
   _checkAnswers: {fileID: 2131551377}
+  _onObjectReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1597496206}
+        m_TargetAssemblyTypeName: IngredientPlacement, Assembly-CSharp
+        m_MethodName: BringNextFruit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1453525043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,7 +1350,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1597496205}
-  - component: {fileID: 1597496207}
   - component: {fileID: 1597496206}
   m_Layer: 5
   m_Name: Emplacement_Aliment
@@ -1173,7 +1357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1597496205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1202,35 +1386,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1597496204}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: ecbecd2dd43a97c4184790dd5f2505e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1597496207
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597496204}
-  m_CullTransparentMesh: 1
+  _fruitMovements:
+  - {fileID: 490353218}
+  - {fileID: 761219172}
+  - {fileID: 1869145924}
+  - {fileID: 1745146809}
+  - {fileID: 625124088}
+  - {fileID: 516655071}
+  - {fileID: 1807588062}
+  - {fileID: 851441302}
 --- !u!1 &1745146804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,6 +1410,7 @@ GameObject:
   - component: {fileID: 1745146807}
   - component: {fileID: 1745146806}
   - component: {fileID: 1745146808}
+  - component: {fileID: 1745146809}
   m_Layer: 5
   m_Name: Pomme
   m_TagString: Untagged
@@ -1320,6 +1488,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientNumber: 0
+  _onDragBeginEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1745146809}
+        m_TargetAssemblyTypeName: FruitMovement, Assembly-CSharp
+        m_MethodName: KillMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1745146809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745146804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd8ff18648e46142abb1ce61fa5b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1807588057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,6 +1527,7 @@ GameObject:
   - component: {fileID: 1807588060}
   - component: {fileID: 1807588059}
   - component: {fileID: 1807588061}
+  - component: {fileID: 1807588062}
   m_Layer: 5
   m_Name: Fougere
   m_TagString: Untagged
@@ -1409,6 +1605,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientNumber: 0
+  _onDragBeginEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1807588062}
+        m_TargetAssemblyTypeName: FruitMovement, Assembly-CSharp
+        m_MethodName: KillMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1807588062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807588057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd8ff18648e46142abb1ce61fa5b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1869145919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,6 +1644,7 @@ GameObject:
   - component: {fileID: 1869145922}
   - component: {fileID: 1869145921}
   - component: {fileID: 1869145923}
+  - component: {fileID: 1869145924}
   m_Layer: 5
   m_Name: Orange
   m_TagString: Untagged
@@ -1498,6 +1722,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ingredientNumber: 0
+  _onDragBeginEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1869145924}
+        m_TargetAssemblyTypeName: FruitMovement, Assembly-CSharp
+        m_MethodName: KillMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1869145924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869145919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd8ff18648e46142abb1ce61fa5b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2131551375
 GameObject:
   m_ObjectHideFlags: 0

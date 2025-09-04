@@ -1,14 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] private int _ingredientNumber;
 
+    [SerializeField] private UnityEvent _onDragBeginEvent = new UnityEvent();
+    
     public void OnBeginDrag(PointerEventData eventData)
     {
         SetOnTop();
+        _onDragBeginEvent?.Invoke();
     }
     
     public void OnDrag(PointerEventData eventData)
