@@ -5,25 +5,28 @@ using UnityEngine;
 
 namespace Assets.Scripts.Interactions
 {
-    public class CheckAnswers
+    public class CheckAnswers : MonoBehaviour
     {
-        [SerializeField, Min(1)] private int nbAnswersRequired;
+        [SerializeField, Min(1)] private int nbAnswersRequired = 1;
         private List<bool> answers = new List<bool>();
 
-
-        public void CheckAnswer(bool answer) {
-
-            answers.Add(answer);
-
+        public void CheckAnswer(bool answer) 
+        {
             if (answers.Count >= nbAnswersRequired)
             {
-                if (answers.All(userAnswer => userAnswer == true))
+                return;
+            }
+            answers.Add(answer);
+            
+            if (answers.Count >= nbAnswersRequired)
+            {
+                if (answers.All(userAnswer => userAnswer))
                 {
                     GameLoopManager.Instance.LoadNextScene();
                 }
                 else 
                 { 
-                    GameLoopManager.Instance.LoadMenuScene();   
+                    GameLoopManager.Instance.LoadMenuScene();
                 }
             }
         }
