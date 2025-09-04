@@ -6,6 +6,6 @@ public class ReceptorComponent : MonoBehaviour
 {
     public void OnObjectReceived()
     {
-        
+        // TODO : Add parameters and more here
     }
 }

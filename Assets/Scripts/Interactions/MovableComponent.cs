@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine.EventSystems;
 
 public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragHandler, IEndDragHandler
@@ -5,7 +6,6 @@ public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragH
     public void OnBeginDrag(PointerEventData eventData)
     {
         SetOnTop();
-        SetDraggedPosition(eventData);
     }
     
     public void OnDrag(PointerEventData eventData)
@@ -15,11 +15,25 @@ public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragH
     
     public void OnEndDrag(PointerEventData eventData)
     {
-        SetDraggedPosition(eventData);
+        CheckForReceptor(eventData);
     }
     
     private void SetDraggedPosition(PointerEventData data)
     {
         transform.position = data.position;
+    }
+
+    private void CheckForReceptor(PointerEventData data)
+    {
+        List<RaycastResult> results = new List<RaycastResult>();
+        CameraManager.Instance.EventSystem.RaycastAll(data, results);
+        foreach (RaycastResult r in results)
+        {
+            if (r.gameObject.TryGetComponent(out ReceptorComponent receptor))
+            {
+                receptor.OnObjectReceived();
+                return;
+            }
+        }
     }
 }

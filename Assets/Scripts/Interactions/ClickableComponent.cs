@@ -10,8 +10,8 @@ public class ClickableComponent : InteractableComponent, IPointerDownHandler, IP
     //Detect current clicks on the GameObject (the one with the script attached)
     public void OnPointerDown(PointerEventData pointerEventData)
     {
-        _onPointerDown.Invoke();
         SetOnTop();
+        _onPointerDown.Invoke();
     }
 
     //Detect if clicks are no longer registering
