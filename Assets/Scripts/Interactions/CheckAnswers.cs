@@ -27,5 +27,11 @@ namespace Assets.Scripts.Interactions
                 }
             }
         }
+
+
+        public void checkBarrel() { 
+        
+
+        }
     }
 }
