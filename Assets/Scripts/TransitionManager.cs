@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TransitionManager : MonoBehaviour
@@ -30,18 +28,19 @@ public class TransitionManager : MonoBehaviour
             return;
         }
 
+        transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
-        _transitionPercent = 1;
+        _transitionPercent = 0;
         _transitionClip.SampleAnimation(_canvasTransform.gameObject, _transitionPercent);
     }
 
     public void FadeInTransition(Action onTransitionComplete)
     {
-        if (_transitionPercent == 1)
+        if (_transitionPercent >= 1)
         {
             onTransitionComplete?.Invoke();
             _onTransitionAction = null;
@@ -54,7 +53,7 @@ public class TransitionManager : MonoBehaviour
 
     public void FadeOutTransition(Action onTransitionComplete = null)
     {
-        if (_transitionPercent == 0)
+        if (_transitionPercent <= 0)
         {
             onTransitionComplete?.Invoke();
             _onTransitionAction = null;
