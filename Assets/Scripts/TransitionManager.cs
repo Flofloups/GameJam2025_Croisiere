@@ -28,6 +28,7 @@ public class TransitionManager : MonoBehaviour
             return;
         }
 
+        transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
     }
 

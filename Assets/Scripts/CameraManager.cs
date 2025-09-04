@@ -20,6 +20,7 @@ public class CameraManager : MonoBehaviour
             return;
         }
 
+        transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
     }
 }

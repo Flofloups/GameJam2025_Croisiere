@@ -25,6 +25,7 @@ public class GameLoopManager : MonoBehaviour
             return;
         }
 
+        transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
     }
 
