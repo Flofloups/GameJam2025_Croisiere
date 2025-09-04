@@ -1,12 +1,10 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-
-    [SerializeField] int fruitNumber;
+    [SerializeField] private int _ingredientNumber;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -36,7 +34,7 @@ public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragH
         {
             if (r.gameObject.TryGetComponent(out ReceptorComponent receptor))
             {
-                receptor.OnObjectReceived(fruitNumber);
+                receptor.OnObjectReceived(_ingredientNumber);
                 enabled = false;
                 return;
             }
