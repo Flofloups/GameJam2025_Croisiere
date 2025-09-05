@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,4 +17,8 @@ public class FadeComponent : MonoBehaviour
     }
 
 
+    private void Reset()
+    {
+        fruit = GetComponent<Image>();
+    }
 }

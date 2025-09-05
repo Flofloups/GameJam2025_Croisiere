@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,6 +10,11 @@ public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragH
 
     [SerializeField] private UnityEvent _onDragBeginEvent = new UnityEvent();
     [SerializeField] private UnityEvent _dragInReceptorEvent = new UnityEvent();
+
+    private void Start()
+    {
+        Debug.Log("adafa");
+    }
 
     public void OnBeginDrag(PointerEventData eventData)
     {

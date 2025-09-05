@@ -41,5 +41,6 @@ public class MirrorTransition : MonoBehaviour
                 _transitionDirection = 0;
                 _transitionPercent = 0;
             }
-        } }
+        } 
+    }
 }
