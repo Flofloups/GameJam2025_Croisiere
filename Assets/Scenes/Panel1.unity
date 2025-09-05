@@ -960,6 +960,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1899216863}
   - component: {fileID: 1899216864}
+  - component: {fileID: 1899216866}
+  - component: {fileID: 1899216865}
   m_Layer: 0
   m_Name: CheckAnswer
   m_TagString: Untagged
@@ -997,8 +999,98 @@ MonoBehaviour:
   nbAnswersRequired: 1
   _resultFeedback: {fileID: 2013070330}
   _nextSceneButton: {fileID: 1652491162}
-  _victoryFeedbacks: []
-  _defeatFeedbacks: []
+  _victoryFeedbacks:
+  - timer: 3
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4580747006677582364, guid: dadb79de828293446b6c515a3166252b, type: 3}
+          m_TargetAssemblyTypeName: NextSceneButton, Assembly-CSharp
+          m_MethodName: Display
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - timer: 1
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899216866}
+          m_TargetAssemblyTypeName: AudioFeedback, Assembly-CSharp
+          m_MethodName: PlaySound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - timer: 2
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899216865}
+          m_TargetAssemblyTypeName: AudioFeedback, Assembly-CSharp
+          m_MethodName: PlaySound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  _defeatFeedbacks:
+  - timer: 3
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1652491162}
+          m_TargetAssemblyTypeName: NextSceneButton, Assembly-CSharp
+          m_MethodName: Display
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1899216865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899216862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96018bab32dfe7a44ad1b33893a904ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundName: Cadenas_chute
+--- !u!114 &1899216866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899216862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96018bab32dfe7a44ad1b33893a904ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundName: Cadenas_ouverture
 --- !u!1001 &2013070329
 PrefabInstance:
   m_ObjectHideFlags: 0
