@@ -45,9 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sounds:
-  - Name: 
-    Clip: {fileID: 0}
-    Volume: 0
+  - Name: Cadenas_ouverture
+    Clip: {fileID: 8300000, guid: 84ed0522de87dc146a527e0222ef8d28, type: 3}
+    Volume: 1
+    Pitch: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Cadenas_chute
+    Clip: {fileID: 8300000, guid: 8d7ae954fea687b4abf5bd9d8e0d54b5, type: 3}
+    Volume: 1
     Pitch: 0
     Loop: 0
     Source: {fileID: 0}

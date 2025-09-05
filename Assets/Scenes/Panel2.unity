@@ -857,6 +857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524231454}
   - component: {fileID: 1524231455}
+  - component: {fileID: 1524231456}
   m_Layer: 0
   m_Name: CheckAnswers
   m_TagString: Untagged
@@ -894,8 +895,24 @@ MonoBehaviour:
   nbAnswersRequired: 1
   _resultFeedback: {fileID: 315187822}
   _nextSceneButton: {fileID: 5846861578139998060}
-  _feedbacks:
-  - timer: 3
+  _victoryFeedbacks:
+  - timer: 1
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1524231456}
+          m_TargetAssemblyTypeName: AudioFeedback, Assembly-CSharp
+          m_MethodName: PlaySound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - timer: 2
     FeedbackEvent:
       m_PersistentCalls:
         m_Calls:
@@ -911,6 +928,36 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  _defeatFeedbacks:
+  - timer: 2
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4580747006677582364, guid: dadb79de828293446b6c515a3166252b, type: 3}
+          m_TargetAssemblyTypeName: NextSceneButton, Assembly-CSharp
+          m_MethodName: Display
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1524231456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524231453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96018bab32dfe7a44ad1b33893a904ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundName: Mettre_masque
 --- !u!224 &1870147552 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8323168077413336336, guid: dadb79de828293446b6c515a3166252b, type: 3}
@@ -1030,6 +1077,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1487312927889289117, guid: b968a0e5cdadfd646a17567fef5136f6, type: 3}
+      propertyPath: Sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487312927889289117, guid: b968a0e5cdadfd646a17567fef5136f6, type: 3}
+      propertyPath: Sounds.Array.data[0].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0afc2f48421befe4bacfe44c750efc0c, type: 3}
+    - target: {fileID: 1487312927889289117, guid: b968a0e5cdadfd646a17567fef5136f6, type: 3}
+      propertyPath: Sounds.Array.data[0].Name
+      value: Mettre_masque
+      objectReference: {fileID: 0}
     - target: {fileID: 1865998525637067738, guid: b968a0e5cdadfd646a17567fef5136f6, type: 3}
       propertyPath: m_Name
       value: Managers
