@@ -8,7 +8,8 @@ public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragH
     [SerializeField] private int _ingredientNumber;
 
     [SerializeField] private UnityEvent _onDragBeginEvent = new UnityEvent();
-    
+    [SerializeField] private UnityEvent _dragInReceptorEvent = new UnityEvent();
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         SetOnTop();
@@ -39,6 +40,7 @@ public class MovableComponent : InteractableComponent, IDragHandler, IBeginDragH
             if (r.gameObject.TryGetComponent(out ReceptorComponent receptor))
             {
                 receptor.OnObjectReceived(_ingredientNumber);
+                _dragInReceptorEvent?.Invoke(); 
                 enabled = false;
                 return;
             }
