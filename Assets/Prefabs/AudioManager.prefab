@@ -44,4 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2221b74e8046c874ebcbeafdd1e77a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sounds: []
+  Sounds:
+  - Name: 
+    Clip: {fileID: 0}
+    Volume: 0
+    Pitch: 0
+    Loop: 0
+    Source: {fileID: 0}
