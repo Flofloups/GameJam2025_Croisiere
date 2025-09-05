@@ -229,7 +229,6 @@ MonoBehaviour:
   _onPointerDown:
     m_PersistentCalls:
       m_Calls: []
-  checkAnswer: {fileID: 1899216864}
 --- !u!224 &569615056 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4678580968259036983, guid: 8312f19308b80b94e9ec4b396969582c, type: 3}
@@ -416,7 +415,6 @@ MonoBehaviour:
   _onPointerDown:
     m_PersistentCalls:
       m_Calls: []
-  checkAnswer: {fileID: 1899216864}
 --- !u!1 &747196051
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +630,6 @@ MonoBehaviour:
   _onPointerDown:
     m_PersistentCalls:
       m_Calls: []
-  checkAnswer: {fileID: 1899216864}
 --- !u!1001 &1077454879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1000,23 +997,8 @@ MonoBehaviour:
   nbAnswersRequired: 1
   _resultFeedback: {fileID: 2013070330}
   _nextSceneButton: {fileID: 1652491162}
-  _feedbacks:
-  - timer: 3
-    FeedbackEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1652491162}
-          m_TargetAssemblyTypeName: NextSceneButton, Assembly-CSharp
-          m_MethodName: Display
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  _victoryFeedbacks: []
+  _defeatFeedbacks: []
 --- !u!1001 &2013070329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1055,11 +1037,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4678580968259036983, guid: 8312f19308b80b94e9ec4b396969582c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 500
+      value: 889.813
       objectReference: {fileID: 0}
     - target: {fileID: 4678580968259036983, guid: 8312f19308b80b94e9ec4b396969582c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 500
+      value: 357.429
       objectReference: {fileID: 0}
     - target: {fileID: 4678580968259036983, guid: 8312f19308b80b94e9ec4b396969582c, type: 3}
       propertyPath: m_LocalPosition.x
