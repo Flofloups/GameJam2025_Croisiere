@@ -21,7 +21,12 @@ namespace Assets.Scripts.Interactions
         
         [SerializeField] ResultFeedback _resultFeedback;
         [SerializeField] NextSceneButton _nextSceneButton;
-        [SerializeField] List<Feedback> _feedbacks = new List<Feedback>();
+        [SerializeField] List<Feedback> _victoryFeedbacks = new List<Feedback>();
+        [SerializeField] List<Feedback> _defeatFeedbacks = new List<Feedback>();
+        
+        private bool _isVictory = false;
+        
+        private List<Feedback> _currentFeedbacks => _isVictory ? _victoryFeedbacks : _defeatFeedbacks;
 
         private float _timer = -1f;
         private int _index = -1;
@@ -36,14 +41,14 @@ namespace Assets.Scripts.Interactions
             
             if (answers.Count >= nbAnswersRequired)
             {
-                bool isSuccess = answers.All(userAnswer => userAnswer);
-                _resultFeedback?.ShowResultFeedback(isSuccess);
-                _nextSceneButton?.SetVictory(isSuccess);
-                if (!isSuccess)
+                _isVictory = answers.All(userAnswer => userAnswer);
+                _resultFeedback?.ShowResultFeedback(_isVictory);
+                _nextSceneButton?.SetVictory(_isVictory);
+                if (!_isVictory)
                 {
                     _nextSceneButton?.Display();
                 }
-                if (isSuccess && _feedbacks.Count > 0)
+                if (_isVictory && _currentFeedbacks.Count > 0)
                 {
                     _timer = 0f;
                     _index = 0;
@@ -56,14 +61,14 @@ namespace Assets.Scripts.Interactions
             if (_index < 0 || _timer < 0) return;
             
             _timer += Time.deltaTime;
-            while (_index < _feedbacks.Count && _feedbacks[_index].timer <= _timer)
+            while (_index < _currentFeedbacks.Count && _currentFeedbacks[_index].timer <= _timer)
             {
-                _feedbacks[_index].FeedbackEvent?.Invoke();
-                _timer -= _feedbacks[_index].timer;
+                _currentFeedbacks[_index].FeedbackEvent?.Invoke();
+                _timer -= _currentFeedbacks[_index].timer;
                 _index++;
             }
 
-            if (_index >= _feedbacks.Count)
+            if (_index >= _currentFeedbacks.Count)
             {
                 _index = -1;
                 _timer = -1f;
