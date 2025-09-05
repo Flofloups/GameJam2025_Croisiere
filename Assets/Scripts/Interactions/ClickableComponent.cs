@@ -7,7 +7,6 @@ public class ClickableComponent : InteractableComponent, IPointerDownHandler, IP
 {
     [SerializeField] private UnityEvent _onPointerUp = new UnityEvent();
     [SerializeField] private UnityEvent _onPointerDown = new UnityEvent();
-    [SerializeField] private bool isGood = false;
     [SerializeField] private CheckAnswers checkAnswer;
     
     
@@ -16,9 +15,6 @@ public class ClickableComponent : InteractableComponent, IPointerDownHandler, IP
     {
         SetOnTop();
         _onPointerDown.Invoke();
-
-        //GameObject obj = pointerEventData.pointerPress;
-        checkAnswer.CheckAnswer(isGood);
     }
 
     //Detect if clicks are no longer registering
