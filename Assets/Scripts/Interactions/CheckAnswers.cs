@@ -39,6 +39,10 @@ namespace Assets.Scripts.Interactions
                 bool isSuccess = answers.All(userAnswer => userAnswer);
                 _resultFeedback?.ShowResultFeedback(isSuccess);
                 _nextSceneButton?.SetVictory(isSuccess);
+                if (!isSuccess)
+                {
+                    _nextSceneButton?.Display();
+                }
                 if (isSuccess && _feedbacks.Count > 0)
                 {
                     _timer = 0f;
