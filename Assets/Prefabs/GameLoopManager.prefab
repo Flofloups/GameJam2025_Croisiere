@@ -50,3 +50,9 @@ MonoBehaviour:
   _sceneReferences:
   - m_sceneObject: {fileID: 102900000, guid: c6e19f3aa50b1f44c95140d69956b130, type: 3}
     m_name: Panel1
+  - m_sceneObject: {fileID: 102900000, guid: fe25162fc24bd4e4abc53ba1c81a90d0, type: 3}
+    m_name: Panel2
+  - m_sceneObject: {fileID: 102900000, guid: 88a1ad19425f7f6448e1ef0ad4254641, type: 3}
+    m_name: Panel3
+  - m_sceneObject: {fileID: 102900000, guid: 8c484816e072e014596d3c3c978d43dc, type: 3}
+    m_name: Panel4

@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Panel1.unity
     guid: c6e19f3aa50b1f44c95140d69956b130
+  - enabled: 1
+    path: Assets/Scenes/Panel2.unity
+    guid: fe25162fc24bd4e4abc53ba1c81a90d0
+  - enabled: 1
+    path: Assets/Scenes/Panel3.unity
+    guid: 88a1ad19425f7f6448e1ef0ad4254641
+  - enabled: 1
+    path: Assets/Scenes/Panel4.unity
+    guid: 8c484816e072e014596d3c3c978d43dc
   m_configObjects: {}

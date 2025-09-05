@@ -48,6 +48,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
+        transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
 
         foreach (Sound sound in Sounds)

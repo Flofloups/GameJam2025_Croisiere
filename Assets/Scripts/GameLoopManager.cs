@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using SceneReferenceUtils;
 using UnityEngine;
@@ -27,17 +25,36 @@ public class GameLoopManager : MonoBehaviour
             return;
         }
 
+        transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
-        LoadMenuScene();
+        if (SceneManager.GetActiveScene().name == "_Boot")
+        {
+            LoadMenuScene();
+        }
+        else if (SceneManager.GetActiveScene().name == _uiScene.Name)
+        {
+            _currentSceneIndex = -1;
+        }
+        else
+        {
+            for (int i = 0; i < _sceneReferences.Count; i++)
+            {
+                if (_sceneReferences[i].Name == SceneManager.GetActiveScene().name)
+                {
+                    _currentSceneIndex = i;
+                    return;
+                }
+            }
+        }
     }
 
     public void LoadNextScene()
     {
-        if (_sceneReferences.Count >= _currentSceneIndex + 1)
+        if (_sceneReferences.Count < _currentSceneIndex + 1)
         {
             LoadMenuScene();
         }
@@ -50,7 +67,7 @@ public class GameLoopManager : MonoBehaviour
     public void LoadGameScene(int sceneIndex)
     {
         if (TransitionManager.Instance.IsTransitioning || _currentSceneIndex == sceneIndex) return;
-        if (_sceneReferences.Count >= sceneIndex || sceneIndex < 0) return;
+        if (_sceneReferences.Count <= sceneIndex || sceneIndex < 0) return;
         
         LoadScene(_sceneReferences[sceneIndex]);
         _currentSceneIndex = sceneIndex;
@@ -75,9 +92,8 @@ public class GameLoopManager : MonoBehaviour
             if (asyncOpLoad == null)
             {
                 OnSceneLoaded(null);
-                return;
             }
-            if (asyncOpLoad != null)
+            else
             {
                 asyncOpLoad.completed += OnSceneLoaded;
                 asyncOpLoad.allowSceneActivation = true;
