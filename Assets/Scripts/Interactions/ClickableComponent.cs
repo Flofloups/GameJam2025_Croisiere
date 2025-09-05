@@ -7,7 +7,6 @@ public class ClickableComponent : InteractableComponent, IPointerDownHandler, IP
 {
     [SerializeField] private UnityEvent _onPointerUp = new UnityEvent();
     [SerializeField] private UnityEvent _onPointerDown = new UnityEvent();
-    [SerializeField] private CheckAnswers checkAnswer;
     
     
     //Detect current clicks on the GameObject (the one with the script attached)
