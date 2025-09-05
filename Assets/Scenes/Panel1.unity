@@ -1000,22 +1000,6 @@ MonoBehaviour:
   _resultFeedback: {fileID: 2013070330}
   _nextSceneButton: {fileID: 1652491162}
   _victoryFeedbacks:
-  - timer: 3
-    FeedbackEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4580747006677582364, guid: dadb79de828293446b6c515a3166252b, type: 3}
-          m_TargetAssemblyTypeName: NextSceneButton, Assembly-CSharp
-          m_MethodName: Display
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   - timer: 1
     FeedbackEvent:
       m_PersistentCalls:
@@ -1032,13 +1016,29 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - timer: 2
+  - timer: 1
     FeedbackEvent:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1899216865}
           m_TargetAssemblyTypeName: AudioFeedback, Assembly-CSharp
           m_MethodName: PlaySound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - timer: 2
+    FeedbackEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1652491162}
+          m_TargetAssemblyTypeName: NextSceneButton, Assembly-CSharp
+          m_MethodName: Display
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

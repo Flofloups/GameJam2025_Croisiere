@@ -61,10 +61,10 @@ namespace Assets.Scripts.Interactions
             if (_index < 0 || _timer < 0) return;
             
             _timer += Time.deltaTime;
-            while (_index < _currentFeedbacks.Count && _currentFeedbacks[_index].timer <= _timer)
+            if (_index < _currentFeedbacks.Count && _currentFeedbacks[_index].timer <= _timer)
             {
                 _currentFeedbacks[_index].FeedbackEvent?.Invoke();
-                _timer -= _currentFeedbacks[_index].timer;
+                _timer = 0;
                 _index++;
             }
 

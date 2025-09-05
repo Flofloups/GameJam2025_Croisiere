@@ -224,7 +224,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   _onPointerDown:
     m_PersistentCalls:
@@ -267,11 +267,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4678580968259036983, guid: 8312f19308b80b94e9ec4b396969582c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 500
+      value: 889.813
       objectReference: {fileID: 0}
     - target: {fileID: 4678580968259036983, guid: 8312f19308b80b94e9ec4b396969582c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 500
+      value: 357
       objectReference: {fileID: 0}
     - target: {fileID: 4678580968259036983, guid: 8312f19308b80b94e9ec4b396969582c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -619,7 +619,7 @@ MonoBehaviour:
   _transitionClip: {fileID: 7400000, guid: 0a4d4edb73ff1ef49b24dcf9539732ee, type: 2}
   _canvasTransitionTransform: {fileID: 781728217}
   _canvasMirrorTransform: {fileID: 392613482}
-  _transitionDuration: 3
+  _transitionDuration: 1
   _onTransitionComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -767,7 +767,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   _onPointerDown:
     m_PersistentCalls:
@@ -903,6 +903,18 @@ MonoBehaviour:
         - m_Target: {fileID: 1524231456}
           m_TargetAssemblyTypeName: AudioFeedback, Assembly-CSharp
           m_MethodName: PlaySound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 781728216}
+          m_TargetAssemblyTypeName: MirrorTransition, Assembly-CSharp
+          m_MethodName: StartTransition
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1077,18 +1089,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1487312927889289117, guid: b968a0e5cdadfd646a17567fef5136f6, type: 3}
-      propertyPath: Sounds.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1487312927889289117, guid: b968a0e5cdadfd646a17567fef5136f6, type: 3}
-      propertyPath: Sounds.Array.data[0].Clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0afc2f48421befe4bacfe44c750efc0c, type: 3}
-    - target: {fileID: 1487312927889289117, guid: b968a0e5cdadfd646a17567fef5136f6, type: 3}
-      propertyPath: Sounds.Array.data[0].Name
-      value: Mettre_masque
-      objectReference: {fileID: 0}
     - target: {fileID: 1865998525637067738, guid: b968a0e5cdadfd646a17567fef5136f6, type: 3}
       propertyPath: m_Name
       value: Managers

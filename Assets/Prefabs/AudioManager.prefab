@@ -57,3 +57,9 @@ MonoBehaviour:
     Pitch: 0
     Loop: 0
     Source: {fileID: 0}
+  - Name: Mettre_masque
+    Clip: {fileID: 8300000, guid: 0afc2f48421befe4bacfe44c750efc0c, type: 3}
+    Volume: 1
+    Pitch: 0
+    Loop: 0
+    Source: {fileID: 0}

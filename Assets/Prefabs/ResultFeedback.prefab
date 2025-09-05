@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 500}
+  m_SizeDelta: {x: 889.813, y: 357.429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3011933545491311083
 CanvasRenderer:
@@ -100,8 +100,8 @@ CanvasGroup:
   m_GameObject: {fileID: 3159114730703971589}
   m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!95 &2743117334587510604
 Animator:

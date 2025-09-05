@@ -34,7 +34,7 @@ public class MirrorTransition : MonoBehaviour
             {
                 _transitionDirection = -1;
                 _transitionPercent = 1f;
-                _canvasMirrorTransform.rotation = Quaternion.Euler(0, 180, 0);
+                _canvasMirrorTransform.localScale = new Vector3(-1, 1, 1);
             }
             else if (_transitionPercent <= 0 && _transitionDirection == -1)
             {
