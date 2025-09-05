@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 43895889}
   - component: {fileID: 43895891}
   m_Layer: 0
-  m_Name: Image_04
+  m_Name: Viande
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,9 +181,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 798e4d4b60082c944a1024c76854a0c6, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 98931188}
   - component: {fileID: 98931190}
   m_Layer: 0
-  m_Name: Image_05
+  m_Name: Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,9 +273,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 600ad7cf5d367a649ab1ac172079e3ea, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 629048130}
   - component: {fileID: 629048132}
   m_Layer: 0
-  m_Name: Image_02
+  m_Name: Jean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,8 +510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -745, y: -4}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -716.42, y: -28}
+  m_SizeDelta: {x: 308.8407, y: 308.8407}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629048130
 MonoBehaviour:
@@ -533,9 +533,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 04f2f83e523717544a8dc53480c6b384, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 727636702}
   - component: {fileID: 727636704}
   m_Layer: 0
-  m_Name: Image_03
+  m_Name: Plante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,9 +625,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 882e23b4f3333064286517f8d5ee4b34, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 2043476482}
   - component: {fileID: 2043476484}
   m_Layer: 5
-  m_Name: Image_01
+  m_Name: Pomme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -964,9 +964,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: cfcf5cc797138ca4ca96fcfe13aaf450, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1011,7 +1011,7 @@ GameObject:
   - component: {fileID: 2104961491}
   - component: {fileID: 2104961493}
   m_Layer: 0
-  m_Name: Image_06
+  m_Name: Piment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1056,9 +1056,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 04f57db2ffa447f40b3937c820450b93, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
